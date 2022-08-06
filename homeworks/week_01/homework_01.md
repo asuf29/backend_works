@@ -31,7 +31,7 @@ Hem yorumlayıcı hem de derleyici görevini üstlenmektedir.
 # Abstract class nedir, nasıl çalışır, ne işe yarar?
 - Ortak özellikleri olan nesneleri modellemek için Java dilinde **abstract(soyut) sınıflar** kullanır.Soyut sınıflar oluşturulurken class ismi yerine **“abstract class”** kelimeleri kullanılır.
 - Soyut sınıflar kalıtım özelliğini kullanarak kod tekrarını azaltır.
-- Soyut sınıflar kendisinden türeyen sınıflardır.Bu sınıflardan nesne oluşturamayız.
+- Soyut sınıflar kendisinden türeyen sınıflardır. Bu sınıflardan nesne oluşturamayız.
 - Soyut sınıfı extend eden sınıf soyut sınıfın tüm soyut metotlarını override etmek zorundadır.
 - Extends ederek farklı sınıflarda kullanabiliriz. Her extends ettiğimiz sınıfta, soyut sınıfların özellikleri kullanılarak farklı sonuçlar üretilir.
 - Arayüzdeki somut nesneler( new operatörü ile oluşturduğumuz nesneler) oluşturulamaz.
