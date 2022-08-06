@@ -33,5 +33,32 @@ Hem yorumlayıcı hem de derleyici görevini üstlenmektedir.
 - Soyut sınıflar kalıtım özelliğini kullanarak kod tekrarını azaltır.
 - Soyut sınıflar kendisinden türeyen sınıflardır.Bu sınıflardan nesne oluşturamayız.
 - Soyut sınıfı extend eden sınıf soyut sınıfın tüm soyut metotlarını override etmek zorundadır.
-- Extends ederek farklı sınıflarda kullanabiliriz.Her extends ettiğimiz sınıfta, soyut sınıfların özellikleri kullanılarak farklı sonuçlar üretilir.
+- Extends ederek farklı sınıflarda kullanabiliriz. Her extends ettiğimiz sınıfta, soyut sınıfların özellikleri kullanılarak farklı sonuçlar üretilir.
 - Arayüzdeki somut nesneler( new operatörü ile oluşturduğumuz nesneler) oluşturulamaz.
+- Basit bir örnek verecek olursak:
+
+```` Java
+package com.company;
+
+public abstract class Person {
+	
+	private String name;
+	private String gender;
+	
+	public Person(String nm, String gen){
+		this.name=nm;
+		this.gender=gen;
+	}
+	
+	public abstract void work();
+	
+	@Override
+	public String toString(){
+		return "Name="+this.name+"::Gender="+this.gender;
+	}
+
+	public void changeName(String newName) {
+		this.name = newName;
+	}	
+}
+````
