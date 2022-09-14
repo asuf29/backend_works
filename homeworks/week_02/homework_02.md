@@ -25,7 +25,7 @@
 ### Ne zaman kullanırız?
 - Veritabanı bağlantılarında, port bağlantılarında, yada dosya işlemleri gibi tek bir nesneye ihtiyaç duyduğumuz zamanlarda kullanırız.
 
-### Örnek: Java Java Singleton Sınıf Sözdizimi
+### Örnek: Java Singleton Sınıf Sözdizimi
 ``` 
 class SingletonExample {
 
@@ -71,3 +71,6 @@ class Main {
 }
 
 ```
+# 3. Springde application properties nedir? Ne işe yarar?
+- Spring Boot varsayılan olarak yapılandırma ayarlarını src/main/resourcesdizini altındaki application.properties dosyasında tutar.
+- Properties dosyaları kolay okunabilirlik ve yazım açısından oldukça kolay bir formattadır. 
